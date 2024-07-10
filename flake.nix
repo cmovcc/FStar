@@ -11,7 +11,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
         ocamlPackages = pkgs.ocaml-ng.ocamlPackages_4_14;
-        z3 = pkgs.callPackage (import ./.nix/z3.nix) { };
+        z3 = pkgs.z3_4_8_5;
         version = self.rev or "dirty";
         fstar-dune = ocamlPackages.callPackage ./ocaml { inherit version; };
         fstar-ulib = pkgs.callPackage ./ulib { inherit fstar-dune version z3; };
