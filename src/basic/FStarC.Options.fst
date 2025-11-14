@@ -331,7 +331,7 @@ let defaults = [
   ("z3rlimit"                                  , Int 5);
   ("z3seed"                                    , Int 0);
   ("z3smtopt"                                  , List []);
-  ("z3version"                                 , String "4.13.3");
+  ("z3version"                                 , String "4.15.3");
 ]
 
 let init () =
